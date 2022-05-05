@@ -12,4 +12,10 @@ redContainer.style.color = "red"
 const greenContainer = document.getElementById("green");
 greenContainer.style.color = "green"
 
- 
+// scorro ogni dato dell'array con .lenght
+for (let i = 0; i < array.length){
+    // SE % 2 === 0 stampo i numeri nell'innerHTML del container verde
+    // ALTRIMENTI in quello rosso
+
+    } 
+}
