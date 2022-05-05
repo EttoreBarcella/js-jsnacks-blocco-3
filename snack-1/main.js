@@ -6,14 +6,21 @@
 const numberList = []
 // creo variabile somma
 let sum = 0
-// creo ciclo indefinito fintanto che somma non è maggiore di 50
-while (sum < 50){
-    // fin tanto che sum < 50 chiedo all'utente di inserire un numero
-    const userNumber = Number(prompt("inserisci un numero"))
-    // sommo il numero scelto alla variabile sum
-    sum += userNumber
-    // inserisco il numero nell'array vuoto
-    numberList.push(userNumber)
-}
-// stampo l'array aggiornato in console
-console.log (numberList)
+
+do {
+    let userNumber = Number(prompt("inserisci un numero"))
+
+    if ( !isNaN(userNumber)){
+        sum += userNumber
+        if (sum < 50){
+            numberList.push(userNumber)
+        }
+    } else{
+        console.log("inserisci un numero non una lettera")
+    }
+
+} while(sum < 50)
+
+
+
+console.log(numberList)
